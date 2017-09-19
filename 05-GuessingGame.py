@@ -11,6 +11,8 @@ from random import randint
 secret = randint(1,100)
 # control the loop
 flag = True
+# initial try times
+tried = 0
 # compare guess number and secret number with while loop
 while(flag):
     # input guess number
@@ -20,6 +22,7 @@ while(flag):
     elif (int(guess) < secret):
         print("too small")
     else:
-        print("Bingo !")
+        print("Bingo !" )
         flag = False
-print("game over `.`")
+    tried += 1
+print("game over `.`\n you tried "+str(tried)+" times")
