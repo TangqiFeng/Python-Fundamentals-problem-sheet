@@ -4,8 +4,22 @@
 # 3.figure out the number of tries
 # 4.avoid the number of tries if input the same number multiple times consecutively
 
-# adapt from website https://stackoverflow.com/questions/3996904/generate-random-integers-between-0-and-9
+# adapted from website https://stackoverflow.com/questions/3996904/generate-random-integers-between-0-and-9
 
 # define the secret number range: 1~100, type: int
 from random import randint
-print(randint(1,100))
+secret = randint(1,100)
+# control the loop
+flag = True
+# compare guess number and secret number with while loop
+while(flag):
+    # input guess number
+    guess = input("enter the guess number \n")
+    if(int(guess) > secret):
+        print("too large")
+    elif (int(guess) < secret):
+        print("too small")
+    else:
+        print("Bingo !")
+        flag = False
+print("game over `.`")
