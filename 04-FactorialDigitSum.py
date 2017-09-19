@@ -5,8 +5,8 @@
 #     3 + 6 + 2 + 8 + 8 + 0 + 0 = 27
 
 # assume a bumber n, function to get n!
-# first give n => 10
-n=10
+# first give n => 100
+n=100
 sum=1
 while(n):
     sum *= n
