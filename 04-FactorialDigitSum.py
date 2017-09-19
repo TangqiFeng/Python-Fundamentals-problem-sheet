@@ -11,5 +11,11 @@ sum=1
 while(n):
     sum *= n
     n -= 1
-print(sum)
+print(sum)   #-- sum is factional sum
+# function to get digit sum, get each last digit by sum%10
+sumDigit=0
+while(sum):
+    sumDigit +=  int(sum%10)
+    sum /= 10
+print(sumDigit)    #-- sum is factional digit sum
 
