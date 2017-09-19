@@ -17,9 +17,13 @@ print("math.sqrt(2) = "+str(sqrt_2))
 #             1.475
 # so, x should between 1.6 and 1.7
 # then,I change the loop: x from 1.6 to 1.7, increase by 0.01
-x=1.6
-while(x<=1.7):
+# I get the result:
+#   1.4    1.4025    1.405    1.4075    1.4100000000000001
+#   1.4125  1.415    1.4175   1.42      1.4225
+# then, change the loop: x from 1.64 to 1.66, increase by 0.001
+x=1.64
+while(x<=1.66):
     z_next = z - ((z*z - x) / (2 * z))
     print(z_next)
-    x+=0.01
+    x+=0.001
 
