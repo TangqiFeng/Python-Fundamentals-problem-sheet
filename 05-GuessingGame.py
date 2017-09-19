@@ -13,6 +13,8 @@ secret = randint(1,100)
 flag = True
 # initial try times
 tried = 0
+# initial guessed number
+guessed = -1
 # compare guess number and secret number with while loop
 while(flag):
     # input guess number
@@ -24,5 +26,10 @@ while(flag):
     else:
         print("Bingo !" )
         flag = False
-    tried += 1
+    # avoid same number guessed more than one time consecutively
+    if(guess == guessed):
+        pass
+    else:
+        tried += 1
+    guessed = guess
 print("game over `.`\n you tried "+str(tried)+" times")
