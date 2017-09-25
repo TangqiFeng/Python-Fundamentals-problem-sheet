@@ -15,10 +15,9 @@ def math_sqrt(x):
 # by this way, some result is very close to math.sqrt(x)
 # so,change loop to stop when result stopped changing (or only changes by a very small delta)
 def newtonsMethod(x,z):
-    sqrt = math.sqrt(x)
     while True:
         tmp = z - ((z*z - x) / (2 * z))
-        if(tmp == sqrt or math.fabs(tmp-sqrt)<0.000000000001):
+        if(tmp == z or math.fabs(tmp-z)<0.000000000001):
             break
         z=tmp
     return tmp
