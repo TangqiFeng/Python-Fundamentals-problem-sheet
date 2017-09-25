@@ -21,13 +21,13 @@ def newtonsMethod(x,z):
         if(tmp == sqrt or math.fabs(tmp-sqrt)<0.000000000001):
             break
         z=tmp
-    print(tmp)
+    return tmp
 
 # let's say x = 2, so need value of sqrt(2)
 x = 2
 math_sqrt(x)
 # assume z=1.0, get square root by newton's meyhod
 z=1.0
-newtonsMethod(x,z)
+print(newtonsMethod(x,z))
 
 
