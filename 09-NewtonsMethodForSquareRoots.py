@@ -20,8 +20,8 @@ def newtonsMethod(x,z):
         tmp = z - ((z*z - x) / (2 * z))
         if(tmp == sqrt or math.fabs(tmp-sqrt)<0.000000000001):
             break
-        print(tmp)
         z=tmp
+    print(tmp)
 
 # let's say x = 2, so need value of sqrt(2)
 x = 2
